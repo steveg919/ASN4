@@ -1,0 +1,546 @@
+/* Steve Girlock - WEB210 */
+
+/* Color variables */
+
+:root {
+    --ltpurple: #D294FF;
+    --mdpurple: #B06CE0;
+    --dkpurple: #6E3894;
+    --ltgreen: #CEDE57 ;
+    --dkgreen: #AEC217;
+  }
+
+/* Global styles
+-------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    color: var(--dkpurple);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: ff-market-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 7vw;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.linkbtn {
+    background-color: var(--ltgreen);
+    text-decoration: none;
+    border: 2px solid var(--dkpurple);
+    border-radius: 10px;
+    padding: 4px 7px 5px 7px;
+    text-align: center;
+    color: var(--dkpurple);
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.linkbtn:hover {
+    background-color: var(--dkgreen);
+    
+}
+/* Profile
+-------------------------------------------- */
+header {
+    background-image: url(../images/AdobeStock_142119634.jpeg);
+    /* background-image: linear-gradient(var(--dkpurple), white); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2em;
+    position:relative;
+}
+header h1 {
+    margin: 10px 0 55px 0;
+    color: var(--dkpurple);
+    font-family: hwt-bulletin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vw;
+    line-height: 0.5;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+header h2 {
+    margin: -50px 0 10px 0;
+    color: var(--dkgreen);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+#header-p {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+header p {
+    color: var(--dkpurple);
+    font-size: 1.25em;
+    line-height: 1.25;
+    width: 95%;
+    margin: 0 auto;
+}
+#steve {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+#steve img {
+    width: 24vw;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+
+/* Projects
+-------------------------------------------- */
+.projects {
+    /* background-image: linear-gradient(var(--dkpurple), white); */
+    color: var(--ltgreen);
+    background-image: url(../images/AdobeStock_350918441.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2em;
+    position:relative;
+    margin: auto;
+    overflow: auto;
+}
+.projects h2 {
+    color: var(--dkgreen);
+    margin: 10px 0 50px;
+}
+.projects p {
+    line-height: 1.25;
+    margin-top: -40px;
+}
+.projects p a {
+   color: var(--ltgreen);
+}
+.projects p a:hover {
+    color: var(--dkgreen);
+    text-decoration: none;
+ }
+.projects .btn {
+    color: var(--dkpurple);
+    text-decoration: none;
+    padding: .25em;
+    border: 2px solid var(--dkpurple);
+    border-radius: 10px;
+}
+.projects .btn:hover {
+    color: var(--dkgreen);
+    background-color: white;
+    text-decoration: none;
+    padding: .25em;
+    border-radius: 10px;
+}
+.ft-projects-div {
+    width: 90%;
+    margin: auto;
+}
+#featured-project1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 48%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    float: left;
+}
+#featured-project1 p {
+    color: var(--dkpurple);
+    line-height: 1.25;
+    margin-top: 10px;
+    text-align: left;
+}
+#featured-project2 {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    width: 48%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    float: right;
+}
+#featured-project2 p {
+    color: var(--dkpurple);
+    line-height: 1.25;
+    margin-top: 10px;
+    text-align: left;
+}
+.projects img {
+    width: 27vw;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -15px;
+}
+.projects h3 {
+    color: var(--dkpurple);
+    font-family: ff-market-web, sans-serif;
+    font-size: 3vw;
+    line-height: .25;
+    margin-top: 0.5em;
+}
+
+/* Experience
+-------------------------------------------- */
+.experience {
+    background-image: url(../images/AdobeStock_215929033.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2em;
+    position:relative;
+    margin: auto;
+}
+#exp {
+    border-radius: 10px;
+    background-color: white;
+    opacity: .8;
+    margin: 0 150px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 0px;
+    top: -80px;
+}
+.experience p {
+    width: 80%;
+    margin: auto;
+    margin-top: -60px;
+}
+.exp-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* Education
+-------------------------------------------- */
+.education {
+    background-image: url(../images/AdobeStock_362234190.png);
+    /* background-image: linear-gradient(var(--dkpurple), white); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-attachment: fixed;
+    color: var(--ltgreen);
+    height: 100vh;
+    padding: 2em;
+    position:relative;
+}
+#edu {
+    background-image: linear-gradient(rgba(110, 56, 148, 0.9), rgba(255, 255, 255, 0.7) );
+    border-radius: 10px;
+    width: 78%;
+    margin: -80px auto;
+    padding-bottom: 20px;
+    
+}
+#edu h2 {
+    line-height: 1.5;
+}
+#schools {
+    margin-top: -10%;
+    color: var(--dkpurple);
+}
+#skills {
+    display: flex;
+
+}
+#skills1, #skills2 {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    color: var(--dkpurple);
+}
+
+
+
+/* Contact
+-------------------------------------------- */
+footer {
+    /* background-image: linear-gradient(var(--ltgreen), white); */
+    background-image: url(../images/AdobeStock_171441730.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2em;
+    position:relative;
+}
+footer h2 {
+    margin-top: 100px;
+    color: var(--dkgreen);
+    text-shadow: 5px 5px 5px var(--dkpurple);
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    display: inline;
+    margin: 0 20px;
+}
+footer i {
+    font-size: 8vw;
+}
+footer #contact a:link {
+    color: var(--dkgreen);
+    text-decoration: none;
+}
+footer #contact a:visited {
+    color: var(--dkgreen);
+}
+footer #contact a:focus {
+    color: var(--ltgreen);
+}
+footer #contact a:hover {
+    color: var(--ltgreen);
+}
+footer #contact a:active {
+    color: var(--dkgreen);
+}
+#contact {
+    position: relative;
+}
+#email:focus::after,
+#email:hover::after {
+    content: 'EMAIL';
+    position: relative;
+    margin-right: -48px;
+    top: 30px;
+    left: -80px;
+}
+#website:focus::after,
+#website:hover::after {
+    content: 'WEBSITE';
+    position: relative;
+    margin-right: -66px;
+    top: 30px;
+    left: -105px;
+}
+#instagram:focus::after,
+#instagram:hover::after {
+    content: 'INSTAGRAM';
+    position: relative;
+    margin-right: -91px;
+    top: 30px;
+    left: -95px;
+}
+#facebook:focus::after,
+#facebook:hover::after {
+    content: 'FACEBOOK';
+    position: relative;
+    margin-right: -83px;
+    top: 30px;
+    left: -95px;
+}
+
+/* -------------------------------------------------------- */
+/* When screen is below 1000px the styles change the layout */
+
+@media screen and (max-width: 1000px) {
+
+    
+    /* Global styles for mobile */
+    h2 {
+        font-size: 12vw;
+        margin-top: 5px;
+    }
+    .linkbtn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Header mobile */
+    header {
+        height: auto;
+        padding: 2em;
+    }
+    header h1 {
+        font-size: 15vw;
+        line-height: 0.5em;
+        margin: 0;
+    }
+    header h2 {
+        margin: 0;
+    }
+    #header-p {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    header p {
+        font-size: 1.25em;
+        line-height: 1.15em;
+        margin-top: -1%;
+        width: 80%;
+    }
+    #steve {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #steve img {
+        width: 50vw;
+        border-radius: 10px;
+        margin: 10px auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Projects mobile */
+    .projects {
+        color: var(--ltgreen);
+        height: auto;
+        padding: 2em;
+    }
+    .projects h3 {
+        font-size: clamp(3rem, 6vw, 5rem); 
+        line-height: .25;
+        margin-top: 0.25em;
+    }
+    .projects p {
+        line-height: 1;
+        margin-top: -10px;
+    }
+    .ft-projects-div {
+        margin: auto;
+        display: flex;
+        margin-bottom: 10%;
+        flex-direction: column;
+        width: 97%;
+        justify-content: space-around;
+    }
+    .ft-projects-div img {
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    }
+    #featured-project1 {
+        width: 95%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #featured-project2 {
+        width: 95%;
+        height: auto;
+    }
+
+    /* Experience mobile */
+    .experience {
+        height: 100%;
+        margin: auto;
+    }
+    .experience h2 {
+        font-size: 9vw;
+        /* padding-bottom: 5px; */
+    }
+    .experience p {
+        width: 98%;
+        margin: 10px 0;
+        /* margin-top: 10px; */
+    }
+    .exp-container {
+        margin-bottom: 1%;
+    }
+    #exp {
+        margin: 15px;
+        padding: 10px; 
+        position: relative;
+        left: 0px;
+        top: -10px;       
+    }
+
+    /* Education mobile */
+    #skills1, #skills2 {
+        list-style-position: inside;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    #edu {
+        margin: 15px;
+        padding: 10px; 
+        left: 0px;
+        top: -10px;       
+    }
+    
+    
+    
+    /* Contact mobile
+    -------------------------------------------- */
+    footer h2 {
+        margin-top: 80px;
+        font-size: 10vw;
+    }
+   
+    footer i {
+        font-size: 8vw;
+    }
+    #email:focus::after,
+    #email:hover::after {
+        content: '';
+        position: relative;
+        margin-right: 0;
+        top: 0;
+        left: 0;
+    }
+    #website:focus::after,
+    #website:hover::after {
+        content: '';
+        position: relative;
+        margin-right: 0;
+        top: 0;
+        left: 0;
+    }
+    #instagram:focus::after,
+    #instagram:hover::after {
+        content: '';
+        position: relative;
+        margin-right: 0;
+        top: 0;
+        left: 0;
+    }
+    #facebook:focus::after,
+    #facebook:hover::after {
+        content: '';
+        position: relative;
+        margin-right: 0;
+        top: 0;
+        left: 0;
+    }
+    /* Education and Skills mobile */
+    #edu {
+        width: 95%;
+        padding: 0 10px 20px;
+    }
+    #skills {
+        flex-direction: column;
+    }
+}
